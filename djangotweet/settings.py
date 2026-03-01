@@ -27,7 +27,12 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-j-qcrv^^uer#o56i+t2f+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['*'] if not DEBUG else ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [
+    'tweetapp.up.railway.app',
+    '*.up.railway.app',
+    '127.0.0.1',
+    'localhost',
+]
 
 
 # Application definition
